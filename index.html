@@ -219,6 +219,223 @@ Since 85 > 70 → Right Rotation
   </div>
 </section>
 
+<!-- ROTATIONS -->
+<section class="py-20 px-8">
+  <div class="max-w-6xl mx-auto text-center" data-aos="zoom-in">
+    <h2 class="text-4xl font-bold mb-12 text-purple-400">Tree Rotations</h2>
+
+    <div class="grid md:grid-cols-2 gap-10 text-left">
+
+      <div class="bg-purple-800 p-6 rounded-xl shadow-lg">
+        <h3 class="text-2xl font-semibold mb-4">Right Rotation</h3>
+<pre class="text-green-300">
+        y
+       /
+      x
+     / \
+    T1  T2
+
+After Rotation:
+
+       x
+      / \
+    T1   y
+         /
+       T2
+</pre>
+      </div>
+
+      <div class="bg-indigo-800 p-6 rounded-xl shadow-lg">
+        <h3 class="text-2xl font-semibold mb-4">Left Rotation</h3>
+<pre class="text-green-300">
+      x
+       \
+        y
+       / \
+     T1  T2
+
+After Rotation:
+
+        y
+       / \
+      x   T2
+       \
+        T1
+</pre>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="py-20 bg-black bg-opacity-40 px-8">
+  <div class="max-w-6xl mx-auto text-center" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-10 text-purple-400">BST vs Heap vs Treap</h2>
+
+    <div class="overflow-x-auto bg-gray-900 rounded-xl shadow-lg">
+      <table class="w-full text-left text-gray-300">
+        <thead class="bg-purple-700">
+          <tr>
+            <th class="p-4">Feature</th>
+            <th class="p-4">BST</th>
+            <th class="p-4">Heap</th>
+            <th class="p-4">Treap</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-700">
+            <td class="p-4">Ordering</td>
+            <td class="p-4">By Key</td>
+            <td class="p-4">By Priority</td>
+            <td class="p-4">Both</td>
+          </tr>
+          <tr class="border-b border-gray-700">
+            <td class="p-4">Balanced?</td>
+            <td class="p-4">No</td>
+            <td class="p-4">Yes</td>
+            <td class="p-4">Expected Yes</td>
+          </tr>
+          <tr>
+            <td class="p-4">Search Time</td>
+            <td class="p-4">O(n)</td>
+            <td class="p-4">O(n)</td>
+            <td class="p-4">O(log n)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section class="py-20 px-8">
+  <div class="max-w-5xl mx-auto text-center" data-aos="fade-left">
+    <h2 class="text-4xl font-bold mb-10 text-purple-400">Applications of Treap</h2>
+
+    <div class="grid md:grid-cols-2 gap-8 text-left">
+
+      <div class="bg-purple-800 p-6 rounded-xl shadow-lg">
+        ✔ Competitive Programming <br>
+        ✔ Order Statistics <br>
+        ✔ Interval Trees <br>
+      </div>
+
+      <div class="bg-indigo-800 p-6 rounded-xl shadow-lg">
+        ✔ Database Indexing <br>
+        ✔ Range Queries <br>
+        ✔ Dynamic Sets
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PSEUDOCODE -->
+<section class="py-20 bg-black bg-opacity-40 px-8">
+  <div class="max-w-5xl mx-auto text-center" data-aos="zoom-in">
+    <h2 class="text-4xl font-bold mb-10 text-purple-400">Treap Insertion Pseudocode</h2>
+
+    <div class="bg-gray-900 p-8 rounded-xl text-green-400 font-mono text-left">
+<pre>
+function insert(root, key):
+    if root == NULL:
+        return new node(key, random priority)
+
+    if key < root.key:
+        root.left = insert(root.left, key)
+
+        if root.left.priority > root.priority:
+            rotateRight(root)
+
+    else:
+        root.right = insert(root.right, key)
+
+        if root.right.priority > root.priority:
+            rotateLeft(root)
+
+    return root
+</pre>
+    </div>
+  </div>
+</section>
+
+<!-- IMPORTANT NOTES -->
+<section class="py-20 bg-gradient-to-r from-purple-900 to-indigo-900 px-8">
+  <div class="max-w-6xl mx-auto text-center" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-10 text-yellow-400">Important Theoretical Notes</h2>
+
+    <div class="bg-black bg-opacity-50 p-8 rounded-xl text-left text-gray-300 leading-relaxed space-y-6">
+
+      <p>
+        🔹 A Treap is also called a <span class="text-purple-400 font-semibold">
+        Randomized Binary Search Tree</span>.
+      </p>
+
+      <p>
+        🔹 It combines two fundamental data structures:
+        <span class="text-indigo-400 font-semibold">Binary Search Tree</span> 
+        and 
+        <span class="text-indigo-400 font-semibold">Heap</span>.
+      </p>
+
+      <p>
+        🔹 The <span class="text-yellow-300 font-semibold">key</span> maintains 
+        the BST property while the 
+        <span class="text-yellow-300 font-semibold">priority</span> maintains 
+        the heap property.
+      </p>
+
+      <p>
+        🔹 If priorities are assigned randomly, the expected height of the treap 
+        becomes <span class="text-green-400 font-semibold">O(log n)</span>.
+      </p>
+
+      <p>
+        🔹 Treap performance is probabilistic, not strictly guaranteed 
+        like AVL or Red-Black Trees.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<!-- MATHEMATICAL ANALYSIS -->
+<section class="py-20 px-8">
+  <div class="max-w-5xl mx-auto text-center" data-aos="zoom-in">
+    <h2 class="text-4xl font-bold mb-10 text-purple-400">Mathematical Insight</h2>
+
+    <div class="bg-gray-900 p-8 rounded-xl text-left text-gray-300 leading-relaxed space-y-5">
+
+      <p>
+        📌 Expected Height of Treap:
+      </p>
+
+      <p class="text-green-400 font-mono text-xl">
+        E(height) = O(log n)
+      </p>
+
+      <p>
+        📌 Worst Case Height:
+      </p>
+
+      <p class="text-red-400 font-mono text-xl">
+        O(n)
+      </p>
+
+      <p>
+        📌 Reason:
+        If priorities are random, probability of skewed tree is very low.
+      </p>
+
+      <p>
+        This makes Treap highly efficient in practical applications.
+      </p>
+
+    </div>
+  </div>
+</section>
+
 
 <!-- ADVANTAGES -->
 <section class="py-20 bg-black bg-opacity-40 px-8">
