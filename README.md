@@ -1,7 +1,11 @@
-# Treap (Tree + Heap) - Interactive Static Webpage
+Here is your **fully rewritten README content**, now generalized for **Data Structures & Algorithms (DSA)** instead of only Treap.
+
+---
+
+# 📚 Data Structures & Algorithms – Interactive Static Webpage
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Treap-Tree%20%2B%20Heap-blue?style=for-the-badge" alt="Treap Badge">
+  <img src="https://img.shields.io/badge/Data%20Structures-Algorithms-blue?style=for-the-badge" alt="DSA Badge">
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
   <img src="https://img.shields.io/badge/Static%20Webpage-HTML%2FCSS%2FJS-orange?style=for-the-badge" alt="Static Webpage">
 </p>
@@ -10,200 +14,231 @@
 
 ## 🌟 Overview
 
-Welcome to the **Treap (Tree + Heap)** interactive visualization project! This static webpage provides an engaging and interactive way to learn and understand the Treap data structure through stunning animations and step-by-step explanations.
+Welcome to the **Data Structures & Algorithms (DSA)** Interactive Visualization Project!
 
-### What is a Treap?
+This static webpage provides an engaging and interactive platform to understand fundamental **data structures and algorithms** through stunning animations, step-by-step execution, and visual explanations.
 
-A **Treap** is a binary search tree (BST) that is also a heap. It combines the properties of both:
-- **Binary Search Tree (BST)**: Left child < Root < Right child (by key)
-- **Heap**: Parent has higher priority than children (by priority)
-
-This elegant data structure provides **O(log n)** expected time complexity for search, insert, and delete operations while maintaining balance through randomization.
+The goal of this project is to make complex DSA concepts **easy, visual, and practical** for students, developers, and competitive programmers.
 
 ---
 
-## 🎬 Animations
+## 📘 What is Data Structures & Algorithms?
 
-This project includes interactive animations to visualize Treap operations:
+### 🔹 Data Structures
 
-### 1. **Insert Animation**
-- Shows new node falling into position
-- Demonstrates heap property restoration through rotations
-- Highlights priority comparisons
+A **data structure** is a way to organize and store data efficiently so that it can be accessed and modified effectively.
 
-### 2. **Delete Animation**
-- Visualizes node removal process
-- Shows merge/bubble-down operations
-- Demonstrates heap property maintenance
+Examples:
 
-### 3. **Search Animation**
-- Path highlighting during search
-- Node comparison visualization
-- Success/failure indicators
+* Arrays
+* Linked Lists
+* Stacks
+* Queues
+* Trees
+* Graphs
+* Hash Tables
+* Heaps
 
-### 4. **Split & Merge Animations**
-- Tree splitting at key boundaries
-- Merging two treaps
-- Priority-based node movement
+### 🔹 Algorithms
+
+An **algorithm** is a step-by-step procedure to solve a problem.
+
+Examples:
+
+* Searching (Linear Search, Binary Search)
+* Sorting (Bubble, Merge, Quick Sort)
+* Recursion
+* Dynamic Programming
+* Greedy Algorithms
+* Graph Traversal (BFS, DFS)
+
+---
+
+## 🎬 Interactive Animations
+
+This project includes animated visualizations for multiple DSA topics:
+
+### 1️⃣ Sorting Algorithms
+
+* Bubble Sort
+* Selection Sort
+* Insertion Sort
+* Merge Sort
+* Quick Sort
+  ✔ Step-by-step element comparison
+  ✔ Swap animations
+  ✔ Time complexity display
+
+---
+
+### 2️⃣ Searching Algorithms
+
+* Linear Search
+* Binary Search
+
+✔ Path highlighting
+✔ Comparison visualization
+✔ Success / failure indicators
+
+---
+
+### 3️⃣ Stack & Queue
+
+* Push / Pop (Stack)
+* Enqueue / Dequeue (Queue)
+  ✔ Dynamic element movement
+  ✔ Overflow / Underflow visualization
+
+---
+
+### 4️⃣ Trees
+
+* Binary Tree
+* Binary Search Tree (BST)
+* Heap
+
+✔ Node insertion visualization
+✔ Traversals (Inorder, Preorder, Postorder)
+✔ Heap property maintenance
+
+---
+
+### 5️⃣ Graph Algorithms
+
+* Breadth First Search (BFS)
+* Depth First Search (DFS)
+  ✔ Node visit animation
+  ✔ Edge highlighting
+  ✔ Traversal order display
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Technology | Purpose |
-|------------|---------|
-| HTML5 | Structure |
-| CSS3 | Styling & Animations |
-| JavaScript | Interactivity & Logic |
-| Canvas/SVG | Animation Rendering |
+| Technology   | Purpose               |
+| ------------ | --------------------- |
+| HTML5        | Structure             |
+| CSS3         | Styling & Animations  |
+| JavaScript   | Logic & Interactivity |
+| Canvas / SVG | Rendering Animations  |
 
 ---
 
 ## 📁 Project Structure
 
 ```
-DS-StaticWebPage/
-├── index.html          # Main HTML file
+DSA-StaticWebPage/
+├── index.html
 ├── css/
-│   └── styles.css     # Styling and animations
+│   └── styles.css
 ├── js/
-│   ├── treap.js       # Treap implementation
-│   └── animation.js   # Animation logic
+│   ├── sorting.js
+│   ├── searching.js
+│   ├── tree.js
+│   ├── graph.js
+│   └── animation.js
 ├── assets/
-│   └── images/        # Static images
-└── README.md          # This file
+│   └── images/
+└── README.md
 ```
 
 ---
 
 ## 🚀 Features
 
-### Interactive Visualizations
-- ✨ **Real-time animation** of all operations
-- ✨ **Step-by-step** execution mode
-- ✨ **Speed control** for animations
-- ✨ **Node highlighting** during operations
+### ✨ Interactive Visualizations
 
-### Educational Content
-- 📚 **Detailed explanations** of Treap properties
-- 📊 **Time complexity** analysis
-- 💡 **Use cases** and applications
-- 🔄 **Comparison** with other data structures
+* Real-time algorithm execution
+* Step-by-step mode
+* Animation speed control
+* Node & element highlighting
 
-### User Experience
-- 🎨 **Modern, clean UI** design
-- 📱 **Responsive** layout
-- 🌈 **Color-coded** nodes (by priority)
-- 🎯 **Intuitive controls**
+### 📚 Educational Content
+
+* Clear theoretical explanation
+* Time & Space complexity analysis
+* Pseudocode display
+* Real-world use cases
+
+### 🎨 User Experience
+
+* Modern & clean UI
+* Responsive design
+* Color-coded visual elements
+* Easy-to-use controls
 
 ---
 
-## 📊 Treap Properties
+## 📊 Time Complexity Overview
 
-### Node Structure
-```
-TreapNode {
-    key: number        // BST key value
-    priority: number   // Heap priority (random)
-    left: TreapNode   // Left child
-    right: TreapNode  // Right child
-}
-```
-
-### Operations Complexity
-
-| Operation | Average | Worst Case |
-|-----------|---------|------------|
-| Search    | O(log n) | O(n) |
-| Insert    | O(log n) | O(n) |
-| Delete    | O(log n) | O(n) |
+| Algorithm     | Best       | Average    | Worst      |
+| ------------- | ---------- | ---------- | ---------- |
+| Bubble Sort   | O(n)       | O(n²)      | O(n²)      |
+| Merge Sort    | O(n log n) | O(n log n) | O(n log n) |
+| Quick Sort    | O(n log n) | O(n log n) | O(n²)      |
+| Binary Search | O(log n)   | O(log n)   | O(log n)   |
+| BFS / DFS     | O(V + E)   | O(V + E)   | O(V + E)   |
 
 ---
 
 ## 🎨 Color Legend
 
-| Color | Meaning |
-|-------|---------|
-| 🔴 Red | High priority node |
-| 🟡 Yellow | Medium priority |
-| 🟢 Green | Low priority |
-| 🔵 Blue | Current operation |
-| ⚪ White | Inactive/Default |
+| Color     | Meaning            |
+| --------- | ------------------ |
+| 🔵 Blue   | Current operation  |
+| 🟢 Green  | Correct / Sorted   |
+| 🔴 Red    | Comparison / Error |
+| 🟡 Yellow | Active element     |
+| ⚪ White   | Default state      |
 
 ---
 
 ## 💻 How to Use
 
-1. **Open** `index.html` in your browser
-2. **Select** an operation (Insert, Delete, Search)
-3. **Enter** a key value
-4. **Watch** the animation play
-5. **Adjust** speed using controls
+1. Open `index.html` in your browser
+2. Select a Data Structure or Algorithm
+3. Enter input values
+4. Choose execution mode (Auto / Step-by-step)
+5. Watch the visualization
 
 ---
 
-## 🔬 Mathematical Background
+## 🔬 Learning Objectives
 
-### Treap Invariants
+After using this project, you will:
 
-1. **BST Property**: For any node `x`:
-   - All keys in left subtree < `x.key`
-   - All keys in right subtree > `x.key`
-
-2. **Heap Property**: For any node `x`:
-   - `x.priority` ≥ priorities of all children
-
-### Expected Height
-
-The expected height of a treap with n nodes is **O(log n)**, which provides excellent practical performance.
+* Understand core DSA concepts visually
+* Learn time & space complexity
+* Improve problem-solving skills
+* Prepare for coding interviews
+* Strengthen competitive programming knowledge
 
 ---
 
-## 📚 Learning Resources
+## 📚 Why Learn DSA?
 
-### Why Treap?
-
-- ✅ **Simplicity**: Easier to implement than balanced BSTs
-- ✅ **Efficiency**: O(log n) expected operations
-- ✅ **Randomization**: No complex rebalancing code
-- ✅ **Versatility**: Supports split and merge operations
-
-### Applications
-
-- 📊 **Priority queues** with fast search
-- 🔍 **Ordered sets** and maps
-- 🎮 **Randomized algorithms**
-- 📝 **Data structures** for competitive programming
+✅ Improves logical thinking
+✅ Essential for technical interviews
+✅ Core of software engineering
+✅ Required for competitive programming
+✅ Builds strong programming foundation
 
 ---
 
-## 🎯 Animation Specifications
+## 🎯 Future Enhancements
 
-### Insert Animation Sequence
-```
-1. Create new node with random priority
-2. Navigate to correct BST position (visualize comparisons)
-3. Insert node as leaf
-4. Check heap property with parent
-5. If violated: perform rotation
-6. Repeat until heap property satisfied
-7. Highlight final tree state
-```
-
-### Delete Animation Sequence
-```
-1. Navigate to target node (show search path)
-2. Rotate node down until it becomes leaf
-3. Remove leaf node
-4. Restore heap property (show rotations)
-5. Highlight final tree state
-```
+* Dynamic Programming visualizer
+* Backtracking problems
+* Advanced graph algorithms (Dijkstra, MST)
+* Interactive coding playground
+* Complexity comparison charts
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome!
+Feel free to fork, improve animations, add algorithms, and submit a Pull Request.
 
 ---
 
@@ -214,5 +249,16 @@ This project is open source and available under the MIT License.
 ---
 
 <p align="center">
-  Made with ❤️ for learning Treap
+  Made with ❤️ for learning Data Structures & Algorithms
 </p>
+
+---
+
+If you want, I can also:
+
+* 🔥 Make this README more **GitHub attractive (with advanced badges & design)**
+* 🎨 Add **DSA roadmap section**
+* 📈 Add **Competitive Programming focused version**
+* 🧠 Convert this into a **professional portfolio project description** for resume
+
+Just tell me which version you want.
